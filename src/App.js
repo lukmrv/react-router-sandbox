@@ -19,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        {/* this way we specify params for the url, which we can retrieve with useParams hook */}
         <Route path="/profile/:username" element={<Profile />} />
         {/* error page has to be the last page */}
         <Route path="/*" element={<ErrorPage />} />
